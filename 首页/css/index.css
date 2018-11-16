@@ -1,0 +1,805 @@
+*{
+	margin: 0;padding: 0;
+}
+body{font-family: "微软雅黑";}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;height: 120px;background: url(../img/header_bg.jpg);
+	background-size: 100% 100%;
+}
+.head{
+	width: 1150px;height: 120px;margin: auto;
+}
+.head-l{
+	width: 370px;height: 120px;float: left;background: url(../img/logo.png);
+	background-size: 100% 100%;
+}
+.head-r{
+	width: 720px;height: 120px;float: right;
+}
+.head-r li{
+	width: 120px;height: 40px;float: left;margin-top: 40px;
+	font-size: 16px;color: white;text-align: center;line-height: 40px;
+	position: relative;
+}
+.tubiao{
+	width: 25px;height: 25px;background: url(../img/nav_xiajiantou.png);
+	background-size: 100% 100%;
+	position: absolute;top: 7.5px;right: 2px;
+}
+#xiala{
+	width: 160px;height: 0px;position: absolute;top: 40px;left: 0px;z-index: 10;
+	background: #36274A;overflow: hidden;
+}
+.head-r li:hover{color: yellow;}
+#xiala p{
+	width: 140px;height: 40px;transition: 1s;
+	padding: 0px 10px;position: relative;
+}
+.tu{
+	width: 15px;height: 15px;position: absolute;top: 12.5px;right: 10px;
+	display: block;
+}
+.tu i{
+	font-size: 14px;
+	display: block;margin-top: 1px;color: transparent;
+}
+#xiala p:hover{
+	background: #3398DA;
+}
+#xiala p a{
+	display: block;
+	height: 40px;color: white;line-height: 40px;text-align: start;font-size: 15px;
+	text-decoration: none;transition: 0.5s;
+}
+#xiala p:hover a{
+	transform: translateX(10px);
+}
+/* 气球 */
+.head1{
+	width: 100%;height: 520px;/* height: auto; */
+	background: url(../img/banner02_bg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+/* 公司简介 */
+.Head2{
+	width: 100%;height: 789px;background: #f1f2f6;overflow: hidden;
+}
+.head2{
+	width: 1150px;height: 789px;margin: auto;
+	overflow: hidden;
+}
+.head2-2{
+	width: 50px;height: 50px;margin: 30px auto;
+	background: url(../img/goOn_icon01.png);
+	background-size: 100% 100%;
+}
+.text1{
+	width: 221px;height: 100px;margin: auto;margin-top: 10px;
+}
+.gongsi{
+	font-size: 54px;
+	font-family: "STKaiti";
+	color: rgb(49, 24, 89);
+	line-height: 50px;font-weight: bold;; 
+}
+.About{
+	font-size: 18px;text-align: center;
+	font-family: "Arial";letter-spacing: 6px;
+	color: rgb(49, 24, 89);font-weight: bold;
+	line-height: 1.889;
+}
+.dian{
+	width: 35px;height: 5px;margin: 8px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dian p{
+	width: 5px;height: 5px;
+	background: url(../img/next&prev_now.png)no-repeat;
+	background-size: 100% 100%;
+	
+}
+.head2-d{
+	width: 1150px;height: 436px;
+	margin-top: 40px;position: relative;
+}
+.head2-d1{
+	width: 27px;height: 385px;position: absolute;top: 25.5px;left: 5px;
+	display: flex;align-items: center;flex-wrap: wrap;justify-content: space-around;
+}
+.head2-d1 li{margin-left: 6.5px;}
+.head2-d1 li:nth-child(2n-1){
+	width: 8px;height: 8px;border-radius: 15px;
+	border: 2px solid #d5dbe0;
+}
+.head2-d1 li:nth-child(2n){
+	width: 2px;height: 40px;background: #d5dbe0;
+	margin-top: -5px;margin-left: 7px;
+}
+.head2-d1 li:nth-child(3){
+	width: 27px;height: 27px;margin-left: 0px;
+	background: url(../img/chanpin_nowline_daquan.png)no-repeat;
+	background-size: 100% 100%;
+}
+.head2-d2{
+	width: 1055px;height: 439px;position: absolute;top: 0;right: 0;
+}
+.head1-c{
+	width: 1150px;height: 520px;margin: auto;
+	position: relative;
+}
+.head1-c1{
+	width: 180px;height: 50px;background: url(../img/banner02_01.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;top: 155px;left: 0px;
+}
+.head1-c2{
+	width: 60px;height: 20px;background: url(../img/banner02_03.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;top: 172px;left: 205px;
+}
+.head1-c3{
+	width: 170px;height: 359px;
+	background: url(../img/banner02_02.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;top: 71px;left: 202px;
+}
+.hd2-l{
+	width: 373px;height: 439px;
+	float: left;background: url(../img/jianjie_image01.jpg);
+	background-size: 100% 100%;
+}
+.hd2-r{
+	width: 621px;height: 444px;float: right;
+}
+.gaishu{
+  font-size: 30px;
+  font-family: "STKaiti";
+  color: rgb(49, 24, 89);
+  line-height: 1.833;
+}
+.pen{
+	width: 543px;height: 3px;float: left;margin-top: 15px;
+	background: url(../img/pen_line.png)no-repeat;margin-left: 10px;
+}
+.pen1{
+	width: 61px;height: 52px;float: left;
+	background: url(../img/pen%201.png)no-repeat;
+	background-size: 100% 100%;margin-top: -33px;margin-left: -3px;
+}
+.ren{
+	width: 99px;height: 99px;float: left;margin-left: 17px;margin-top: 41px;
+	background: url(../img/kkkk_03.png)no-repeat;
+	background-size: 100% 100%;
+}
+.ren-r{
+	width: 480px;height: 180px;float: left;margin-left: 20px;
+}
+.ren-r p:nth-child(1){
+  font-size: 24px;
+  font-family: "STKaiti";
+  color: rgb(107, 106, 111);
+  line-height: 2.533;
+}
+.ren-r p:nth-child(2){
+	font-size: 14px;margin-top: 18px;
+	font-family: "STKaiti";
+	color: rgb(188, 169, 215);
+	line-height: 1.714;
+}
+.ren-1{
+	width: 31px;height: 31px;float: left;
+	background: url(../img/prev_jiantou.png)no-repeat;
+	background-size: 100% 100%;
+}
+.ren-2{
+	width: 553px;height: 2px;float: left;
+}
+.ren-2 img{
+	width: 100%;height: 100%;margin-left: 3px;
+}
+.ren-3{
+	width: 31px;height: 31px;
+	background: url(../img/next_jiantou.png)no-repeat;
+	background-size: 100% 100%;float: left;
+}
+.ren-4{
+	width: 618px;height: 98px;float: left;
+}
+.ren-4 p{
+	width: 618px;height: auto;
+	margin-top: 24px;
+  font-size: 14px;margin-top: 24px;
+  font-family: "STKaiti";
+  color: rgb(188, 169, 215);
+  line-height: 1.714;
+}
+.ren-4 p span{
+	display: block;
+}
+.ren-5{
+	width: 217px;height: 54px;float: right;
+}
+.ren-51{
+	width: 25px;height: 20px;float: left;
+	background: url(../img/yinhao_zuo.png)no-repeat;
+	background-size: 100% 100%;
+}
+.ren-52{
+  font-size: 18px;float: left;margin-top: 14px;
+  font-family: "STKaiti";
+  color: rgb(107, 106, 111);
+  line-height: 1.333;
+}
+.ren-53{
+	width: 25px;height: 20px;float: left;margin-top: 34px;
+	background: url(../img/yinhao_you.png)no-repeat;
+	background-size: 100% 100%;
+}
+.head3{
+	width: 100%;height: 1024px;
+	background: url(../img/mokuai02_bg.jpg)no-repeat;
+	background-size: 100% 100%;overflow: hidden;
+}
+.head3-c{
+	width: 1150px;height: 923px;margin: auto;
+}
+.text2{
+	margin-top: 84px;
+}
+.chanpin{
+	margin-top: 30px;
+	width: 1150px;height: 157px;
+	display: flex;
+	justify-content: center;align-items: center;
+}
+.chanpin li{
+	width: 8px;height: 8px;border-radius: 8px;
+	border: 2px solid #64517e;float: left;background: #363048;
+	position: relative;
+}
+.chanpin li:nth-of-type(2){
+	width: 40px;height: 40px;border-radius: 40px;margin-top: -17px;
+}
+.chanpin p{
+	width: 149.4px;height: 2px;background: #64517e;
+	float: left;margin-top: 5px;
+}
+.chanpin li div{
+	position: absolute;
+  font-size: 18px;text-align: center;
+  font-family: "STKaiti";
+  color: rgb(188, 169, 215);
+  line-height: 1.333
+}
+.chanpin li div:nth-child(1){
+	top: -50px;width: 112px;left: -50px;
+}
+.chanpin li div:nth-child(2){
+	top: 30px;width: 112px;left: -50px;
+}
+.chanpin li:nth-of-type(2) div:nth-child(1){
+	top: -50px;width: 112px;left: -40px;
+}
+.chanpin li:nth-of-type(2) div:nth-child(2){
+	top: 60px;width: 112px;left: -40px;
+}
+.jiantou{
+	width: 61px;height: 45px;
+	background: url(../img/arrow_07.png)no-repeat;
+	background-size: 100% 100%;
+	margin-left: 293px;margin-top: 40px;
+}
+.pend2{
+	background: url(../img/pen.png)no-repeat;
+	margin-top: -35px;
+}
+.ren1{
+	background: url(../img/kkkk_07.png)no-repeat;
+}
+.ren51{
+	background: url(../img/yinhao02_zuo.png)no-repeat;
+}
+.ren53{
+	background: url(../img/yinhao02_you.png)no-repeat;
+}
+.hd2-l1{
+	background: url(../img/首页-恢复的-恢复的_03.png)no-repeat;
+}
+.head4{
+	width: 100%;height: 2064px;background: #f1f2f6;
+	position: relative;
+}
+.foot{
+	width: 1150px;height: 33px;
+	background: url(../img/hezuo_topbg.png)no-repeat;
+	position: absolute;bottom: -33px;left: 50%;margin-left: -575px;
+}
+.head4-c{
+	width: 1150px;height: 2064px;margin: auto;
+}
+.top{
+	width: 108px;height: 176px;margin: auto;
+	background: url(../img/yewu_zhiyinimg.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+.h4-c1{
+	width: 1150px;height: 357px;margin-top: 30px;
+}
+.h4c-1{
+	width: 1150px;height: 118px;
+	position: relative;
+}
+.h4c-1 p:nth-child(1){
+	width: 108px;height: 118px;text-align: center;
+  font-size: 90px;color: #aeaeb2;
+  font-family: "SimSun";
+  color: rgba(107, 106, 111, 0.502);
+  line-height: 118px; position: absolute;left: 0px;
+}
+.h4c-1 p:nth-child(2){
+	width: 174px;height: 72px;
+	position: absolute;top:23px;left: 300px;
+}
+.h4c-1 p:nth-child(2) span:nth-child(1){
+	display: block;
+	font-size: 24px;
+  font-family: "STKaiti";
+  color: rgb(93, 85, 111);
+  line-height: 1.003;
+  text-align: right;
+}
+.h4c-1 p:nth-child(2) span:nth-child(2){
+	display: block;
+	font-size: 14px;
+  font-family: "STKaiti";
+  color: rgb(93, 85, 111);
+  line-height: 1.72;
+  text-align: right;
+}
+.h4c-1 p:nth-child(3){
+	width: 118px;height: 118px;
+	position: absolute;left: 514px;
+	background: url(../img/business_cimg01.png)no-repeat;
+	background-size: 100% 100%;
+}
+.h4c-1 p:nth-child(4){
+	width: 312px;height: 69px;
+	position: absolute;top: 24.5px;left: 670px
+}
+.h4c-1 p:nth-child(4) span{
+	display: block;
+	font-size: 14px;
+  font-family: "STKaiti";
+  color: rgb(107, 106, 111);
+  line-height: 1.514;
+}
+.h4c-1 p:nth-child(5){
+	width: 67px;height: 67px;
+	position: absolute;top: 25.5px;right: 3px;
+	background: url(../img/business_zhankaishouqi.png)no-repeat;
+	background-position: 0px 0px;
+}
+.h4c-2{
+	width: 1150px;height: 67px;
+	border-bottom: 2px dashed #e0e0e2;
+}
+#tu1{
+	background: url(../img/business_cimg02.png)no-repeat;
+}
+#cha{
+	background: url(../img/business_zhankaishouqi.png);
+	background-position: 0px -67px;
+}
+.pingtai{
+	width: 792px;height: 345px;margin: auto;
+	margin-top: 74px;
+}
+.pingtai p{
+	font-size: 13.957px;
+	text-indent: 4em;
+  font-family: "STKaiti";
+  color: rgb( 107, 106, 111 );
+  line-height: 1.72;
+}
+#zi{
+	width: 792px;height: 25px;
+	position: relative;
+}
+.biao1{
+	position: absolute;top: 7px;left: 0px;
+	width: 11px;height: 11px;float: left;
+	background: url(../img/chanpin_nowline_daquan.png)no-repeat;
+	background-size: 100% 100%;
+}
+#zi span{display: block;}
+.biao-1{
+	position: absolute;top: 0;left: 15px;
+	display: block;float: left;
+	font-size: 13.957px;
+	text-indent: 1em;
+	font-family: "STKaiti";
+	color: rgb( 107, 106, 111 );
+	line-height: 1.72;
+}
+#tu2{
+	background: url(../img/business_cimg03.png)no-repeat;
+}
+.top2{
+	width: 31px;height: 94px;margin: auto;
+	background: url(../img/tuandui_zhiyinimg.jpg)no-repeat;
+	background-size: 100% 100%;
+	margin-top: 15px;
+}
+.head4-d{
+	width: 1150px;height: 185px;
+	margin-top: 103px;
+	display: flex;justify-content: space-between;
+}
+.head4d{
+	width: 534px;height: 183px;border: 1px solid #e0e1e5;
+	position: relative;
+}
+.h4d-1{
+	width: 156px;height: 156px;
+	background: url(../img/team_img02.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;top: -78px;left: 25px;
+}
+.h4d-2{
+	width: 120px;height: 45px;
+	text-align: center;
+	position: absolute;bottom: 24px;left: 42px;
+}
+.h4d-2 p:nth-child(1){
+  font-size: 23.415px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+  line-height: 1.025;
+}
+.h4d-2 p:nth-child(2){
+  font-size: 18px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+  line-height: 1.333;
+}
+.h4d-3{
+	width: 230px;height: 64px;
+  font-size: 15.31px;
+  font-family: "STKaiti";
+  color: rgb( 131, 131, 134 );
+  line-height: 1.537;
+  position: absolute;top: 28px;left: 210px;
+}
+.h4d-4{
+	width: 246px;height: 47px;background: #d9d9e1;
+	position: absolute;bottom: 18px;left: 214px;
+}
+.h4d-4l{
+	width: 46px;height: 47px;float: left;
+	display: flex;justify-content: center;align-items: center;
+}
+.h4d-4l p{
+	width: 16px;height: 12px;
+	background: url(../img/team_contact.png)no-repeat;
+	background-position: -3px 0px;
+}
+.h4d-4r{
+	width: 198px;height: 43px;border: 2px solid #d9d9e1;
+	border-left: none;float: left;background: #e7e8ec;
+	text-align: center;
+  font-size: 15.61px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+  line-height: 2.537;
+}
+.h4d-5{
+	width: 47px;height: 185px;background: #2999d6;
+	position: absolute;top: -1px;right: -1px;
+}
+.h4d-5 p{
+	width: 47px;height: 46.25px;
+	display: flex;justify-content: center;align-items: center;
+}
+.h4d-5 p span{
+	display: block;
+	width: 21px;height: 20px;
+	background: url(../img/team_contact.png)no-repeat;
+	background-position: 0px -44px;
+}
+.h4d-5 p:nth-child(2) span{
+	background-position: 0px -91px;
+}
+.h4d-5 p:nth-child(2){background: #168bcb;}
+.h4d-5 p:nth-child(3) span{
+	background-position: 0px -139px;
+}
+.h4d-5 p:nth-child(4) span{
+	background-position: 0px -181px;
+}
+.h4d-11{
+	background: url(../img/team_img03.png)no-repeat;
+}
+.jiantou1{
+	width: 218px;height: 30px;
+	margin: auto;
+	margin-top: 74px;
+}
+.xian{
+	width: 55px;height: 14px;border-bottom: 2px dashed #d6d8df;
+	float: left;
+}
+.dian2{
+	width: 42px;height: 10px;border: 2px solid #d6d8df;
+	border-radius: 10px;float: left;margin-top: 9px;
+	display: flex;justify-content: space-around;align-items: center;
+}
+.dian2 p{
+	width: 5px;height: 5px;background: #d6d8df;border-radius: 5px;
+}
+.dian2 p:nth-child(1){background: #2999D6;}905
+.head5{
+	width: 100%;height: 905px;
+}
+.head5-c{
+	width: 1150px;height: 872px;
+	margin: auto;margin-top: 33px;
+	position: relative;overflow: hidden;
+}
+.foot1{
+	background: url(../img/hezuo_bottombg.png)no-repeat;
+	background-size: 100% 100%;
+	width: 1150px;height: 33px;
+	position: absolute;bottom: 0px;left: 50%;margin-left: -575px;
+}
+.head5-d{
+	width: 1150px;height: 469px;margin-top: 98px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.hd5-d{
+	width: 539px;height: 469px;
+}
+.hd5-dt{
+	width: 539px;height: 67px;overflow: hidden;
+	position: relative;
+}
+.biao2{
+	width: 65px;height: 21px;border: 2px solid #e2e2e2;
+	border-radius: 20px;
+	position: absolute;top: 21px;right: 5px;
+	font-size: 13px;text-align: center;line-height: 21px;letter-spacing: 2px;
+}
+.biao2 i{font-size: 13px;}
+.hd5-dd{
+	width:499px;height: 340px;
+	padding: 20px;margin-top: 10px;
+	display: flex;justify-content: space-around;align-items: center;
+	flex-wrap: wrap;
+}
+.hd5-dd p{
+	width: 126px;height: 120px;
+}
+.head6{
+	width: 100%;height: 851px;background: #f1f2f6;
+}
+.head6-c{
+	width: 1150px;height: 851px;margin: auto;
+	overflow: hidden;
+}
+.hd6-c1{
+	width: 1150px;height: 50px;margin-top: 66px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.h4d-41{
+	width: 346px;height: 45px;background: #e7e8ec;
+}
+.h4d-4l2{
+	width: 46px;height: 50px;float: left;
+	display: flex;justify-content: center;align-items: center;
+}
+.h4d-4l2 p{
+	width: 18px;height: 18px;
+	background: url(../img/lianxi_icons.png)no-repeat;
+	background-position: 0px 0px;
+}
+.h4d-4r2{
+	width: 278px;height: 40px;border: 2px solid #e7e8ec;
+	padding-left: 20px;
+	border-left: none;float: left;text-align: start;
+	background: white;line-height: 40px;
+  font-size: 15.61px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+}
+#h4-1{
+	background-position: -42px 0px;
+}
+#h4-2{
+	background-position: -93px 0px;
+}
+.hd6-c2{
+	width: 1150px;height: 216px;margin-top: 20px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.hd6c2{
+	width: 722px;height: 214px;border: 1px solid #e7e8ec;
+	background: white;
+}
+.hd6c{
+	width: 46px;height: 214px;background: #e7e8ec;float: left;
+}
+.hd6c1{
+	width: 656px;height: 214px;padding-left: 20px;float: left;
+	line-height: 40px;
+	font-size: 15.61px;
+	font-family: "STKaiti";
+	color: rgb( 95, 76, 130 );
+}
+.hd6c21{
+	width: 350px;height: 216px;
+}
+.liuyan{
+	width: 350px;height: 170px;
+}
+.liuyan p:nth-child(1){
+	width: 345px;height: auto;
+  font-size: 15.61px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+  line-height: 1.537;
+}
+.liuyan p:nth-child(2){
+	margin-top: 43px;
+	width: 345px;height: auto;
+  font-size: 17.561px;
+  font-family: "STKaiti";
+  color: rgb( 96, 95, 100 );
+  line-height: 1.367;
+}
+.liuyan1{
+	width: 350px;height: 46px;background: #2999d6;
+}
+.liuyan-l{
+	width: 46px;height: 46px;float: left;
+	display: flex;justify-content: center;align-items: center
+}
+.liuyan-l p{
+	width: 18px;height: 18px;
+	background: url(../img/lianxi_icons.png)no-repeat;
+	background-position: -191px 0px;
+}
+.liuyan-r{
+	width: 304px;height: 46px;float: left;background: #168bcb;
+	font-size: 17.561px;color: white;text-align: center;
+	font-family: "STKaiti";
+	line-height: 2.367;
+}
+.hd6-c3{
+	width: 1150px;height: 150px;margin-top: 92px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.dizhi{
+	width: 369px;height: 150px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.dizhi-t{
+	width: 101px;height: 101px;
+	background: url(../img/lianxi_icon01.png)no-repeat;
+	background-size: 100% 100%;
+}
+.dizhi-r{
+	width: 240px;height: 150px;
+}
+.dizhi-r p{
+  font-size: 17.405px;
+  font-family: "STKaiti";
+  color: rgb( 82, 77, 92 );
+  line-height: 1.379;
+}
+.dizhi-r p:nth-child(1){
+  font-size: 23.207px;
+  font-family: "STKaiti";
+  color: rgb( 95, 76, 130 );
+  line-height: 1.034;
+}
+.dizhi-r p:nth-child(2){
+	width: 210px;height: 7px;margin-top: 17px;
+	background: url(../img/lianxi_kuaier_bg.png)no-repeat;
+	background-size: 100% 100%;
+}
+.dizhi-t1{
+	background: url(../img/lianxi_icon02.png)no-repeat;
+}
+.dizhi-t2{
+	background: url(../img/lianxi_icon03.png)no-repeat;
+}
+.head7{
+	width: 100%;height: 627px;
+	background: url(../img/map.png)no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.head7 p:nth-child(1){
+	width: 1150px;height: 33px;position: absolute;
+	top: 0px;left: 50%;margin-left: -575px;
+	background: url(../img/map_topimg.png)no-repeat;
+	background-size: 100% 100%;
+}
+.head7 p:nth-child(2){
+	width: 100%;height: 33px;
+	position: absolute;bottom: 0px;left: 0px;
+	background: url(../img/map_bottomimg.png)no-repeat;
+	background-size: 100% 100%;
+}
+.head8{
+	width: 100%;height: 380px;
+	background: url(../img/yinyue_bg.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+.head8-c{
+	width: 1150px;height: 378px;margin: auto;
+	position: relative;border: 1px solid transparent;
+}
+.ding-1{
+	width: 50px;height: 50px;
+	background: url(../img/scroll_top_bg.png)no-repeat;
+	background-position: 0px 0px;
+	position: absolute;top: 31px;right: -67px;
+}
+.ding-2{
+	width: 235px;height: 87px;
+	background: url(../img/fixed_contactus.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;top: 104px;right: -86px;
+}
+.hd8-cc{
+	width: 562px;height: 52px;margin: auto;
+	margin-top: 123px;
+	display: flex;justify-content: space-between;align-items: center;
+}
+.hd8-cc p{
+	width: 57px;height: 57px;
+	background: url(../img/yinyue_duo.png)no-repeat;
+	background-position: 0px 0px;
+}
+/* .hd8-cc p:nth-child:hover{
+	background-position: 0px -57px;
+} */
+.hd8-cc p:nth-child(2){
+	background: url(../img/yinyue_fa.png)no-repeat;
+	background-position: 0px -57px;
+}
+.hd8-cc p:nth-child(3){
+	background: url(../img/yinyue_la.png)no-repeat;
+	/* background-position: 0px 0px; */
+}
+.hd8-cc p:nth-child(4){
+	background: url(../img/yinyue_lai.png)no-repeat;
+	/* background-position: 0px 0px; */
+}
+.hd8-cc p:nth-child(5){
+	background: url(../img/yinyue_mi.png)no-repeat;
+	/* background-position: 0px 0px; */
+}
+.hd8-cc p:nth-child(6){
+	background: url(../img/yinyue_suo.png)no-repeat;
+	/* background-position: 0px 0px; */
+}
+.hd8-cc p:nth-child(7){
+	background: url(../img/yinyue_xi.png)no-repeat;
+	/* background-position: 0px 0px; */
+}
+.hd8-c1{
+	width: 1150px;height: 88px;border-bottom: 2px dashed #bca9d7;
+}
+.bei{
+	width: 120px;height: auto;text-align: center;
+  font-size: 17.405px;
+  font-family: "STKaiti";
+  color: rgb( 255, 255, 255 );
+  line-height: 3.379;margin: auto;
+}

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".head-r").find("li").hover(function(){
+					var _this=this
+					var X=(($(_this).find("#xiala p").length)*40+10)+'px'
+					var Y=(($(_this).find("#xiala p").length)*40)+'px'
+					$(this).find("#xiala").animate({"height":X},100,"swing",function(){
+						$(_this).find("#xiala").animate({"height":Y},200,"swing")
+					})
+				},function(){
+					$(this).find("#xiala").stop(true)
+					$(this).find("#xiala").css("height","0")
+				})	
+				$("#xiala").find("p").on({
+					"mouseover":function(){
+						$(this).find("i").css("color","white")
+					},
+					"mouseout":function(){
+						$(this).find("i").css("color","transparent")
+					}
+				})
+				$(".xiala1").find("p").on({
+					"mouseover":function(){
+						$(this).find("i").css("color","white")
+					},
+					"mouseout":function(){
+						$(this).find("i").css("color","transparent")
+					}
+				})
+				$(".xiala2").find("p").on({
+					"mouseover":function(){
+						$(this).find("i").css("color","white")
+					},
+					"mouseout":function(){
+						$(this).find("i").css("color","transparent")
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<div class="head-l"></div>
+				<ul class="head-r">
+					<li>首页</li>
+					<li id="niao">小鸟掌学
+						<div class="tubiao"></div>
+						<div id="xiala">
+							<p>
+								<a href="#">小鸟掌学主页</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">小鸟掌学概述</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">对企业的价值</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">小鸟掌云</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">微课联盟</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">APP下载</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+						</div>
+					</li>
+					<li>小鸟动态</li>
+					<li>企业文化
+						<div class="tubiao"></div>
+						<div id="xiala" class="xiala1">
+							<p>
+								<a href="#">公司理念</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">公司文化</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">公司氛围</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+						</div>
+					</li>
+					<li>人力资源
+						<div class="tubiao"></div>
+						<div id="xiala" class="xiala2">
+							<p>
+								<a href="#">人才理念</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">团队介绍</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+							<p>
+								<a href="#">招聘信息</a>
+								<span class="tu"><i class="icon-chevron-right"></i></span>
+							</p>
+						</div>
+					</li>
+					<li>联系我们</li>
+				</ul>
+			</div>
+		</header>
+		<div class="head1">
+			<!-- <div class="head2-1"></div> -->
+			<div class="head1-c">
+				<div class="head1-c1"></div>
+				<div class="head1-c2"></div>
+				<div class="head1-c3"></div>
+			</div>
+		</div>
+		<div class="Head2">
+			<div class="head2">
+				<div class="head2-2"></div>
+				<div class="text1">
+					<div class="gongsi">公司简介</div>
+					<div class="About">About Company</div>
+					<div class="dian">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="head2-d">
+					<ul class="head2-d1">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="head2-d2">
+						<div class="hd2-l"></div>
+						<div class="hd2-r">
+							<p class="gaishu">概述</p>
+							<div class="pen"></div>
+							<div class="pen1"></div>
+							<div class="ren"></div>
+							<div class="ren-r">
+								<p>概述</p>
+								<p>翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限负责公司负责翡翠掌学的运营、推广和研发等工作。</p>
+							</div>
+							<div class="ren-1"></div>
+							<div class="ren-2">
+								<img src="img/next.png" >
+							</div>
+							<div class="ren-3"></div>
+							<div class="ren-4">
+								<p>
+									<span>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</span>
+									<span>我们做的是“新学习、新媒体”！</span>
+									<span>帮助企业建立自己的企业学校，实现:全民全学、全民全校、全民全智(比拼式学习)！</span>
+								</p>
+							</div>
+							<div class="ren-5">
+								<div class="ren-51"></div>
+								<div class="ren-52">学我所用、学以致用</div>
+								<div class="ren-53"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head3">
+			<div class="head3-c">
+				<div class="text1 text2">
+					<div class="gongsi" style="color: white;">主要产品</div>
+					<div class="About" style="color: white;">Our Works</div>
+					<div class="dian">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="chanpin">
+					<ul>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+						<li>
+							<div>继续教育系统</div>
+							<div>关于项目的简简单单介绍</div>
+						</li>
+						<p></p>
+					</ul>
+				</div>
+				<div class="jiantou"></div>
+				<div class="head2-d">
+					<ul class="head2-d1">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="head2-d2">
+						<div class="hd2-l hd2-l1"></div>
+						<div class="hd2-r">
+							<p class="gaishu">概述</p>
+							<div class="pen"></div>
+							<div class="pen1 pend2"></div>
+							<div class="ren ren1"></div>
+							<div class="ren-r">
+								<p>概述</p>
+								<p>翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限负责公司负责翡翠掌学的运营、推广和研发等工作。</p>
+							</div>
+							<div class="ren-1"></div>
+							<div class="ren-2">
+								<img src="img/next.png" >
+							</div>
+							<div class="ren-3"></div>
+							<div class="ren-4">
+								<p>
+									<span>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</span>
+									<span>我们做的是“新学习、新媒体”！</span>
+									<span>帮助企业建立自己的企业学校，实现:全民全学、全民全校、全民全智(比拼式学习)！</span>
+								</p>
+							</div>
+							<div class="ren-5">
+								<div class="ren-51 ren51"></div>
+								<div class="ren-52">学我所用、学以致用</div>
+								<div class="ren-53 ren53"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head4">
+			<div class="foot"></div>
+			<div class="head4-c">
+				<div class="top"></div>
+				<div class="text1" style="margin-top: 20px;">
+					<div class="gongsi">业务范围</div>
+					<div class="About" style="width: 240px;">Business Scope</div>
+					<div class="dian">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="h4-c1">
+					<div class="h4c-1">
+						<p>01</p>
+						<p>
+							<span>企业培训平台</span>
+							<span>Enterprise training platfotm</span>
+						</p>
+						<p></p>
+						<p>
+							<span>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</span>
+							<span>我们做的是“新学习、新媒体”！</span>
+						</p>
+						<p></p>
+					</div>
+					<div class="h4c-2"></div>
+					<div class="h4c-1" style="margin-top: 52px;">
+						<p>02</p>
+						<p>
+							<span>翡翠学院云服务</span>
+							<span>cloud services</span>
+						</p>
+						<p id="tu1"></p>
+						<p>
+							<span>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</span>
+							<span>我们做的是“新学习、新媒体”！</span>
+						</p>
+						<p id="cha"></p>
+					</div>
+					<div class="pingtai">
+						<p>
+							"翡翠学院"云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出学习资源，按学习计划“推送”给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。
+						</p><br>
+						<p>
+							"翡翠学院"主要基于智能手机平台进行学习。针对性、趣味性、创新型的学习方式有助于员工建立学习的兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。
+						</p><br>
+						<p id="zi"><span class="biao1"></span><span class="biao-1">"翡翠学院"云平台是企业战略变革的工具；</span></p>
+						<p id="zi"><span class="biao1"></span><span class="biao-1">"翡翠学院"云平台是企业文化的组成部分；</span></p>
+						<p id="zi"><span class="biao1"></span><span class="biao-1">"翡翠学院"云平台是企业培训的重要支撑手段和实施保障机制；</span></p>
+						<p id="zi"><span class="biao1"></span><span class="biao-1">"翡翠学院"云平台是企业上下游意识形态统一的桥梁；</span></p>
+						<p id="zi"><span class="biao1"></span><span class="biao-1">"翡翠学院"云平台是企业经验分享的平台；</span></p>
+					</div>
+					<div class="h4c-2" style="border-top: 2px dashed #e0e0e2;border-bottom: none;"></div>
+					<div class="h4c-1">
+						<p>03</p>
+						<p>
+							<span>企业培训课程内容提供</span>
+							<span>Enterprise training course</span>
+						</p>
+						<p id="tu2"></p>
+						<p>
+							<span>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</span>
+							<span>我们做的是“新学习、新媒体”！</span>
+						</p>
+						<p></p>
+					</div>
+					<div class="h4c-2"></div>
+					<div class="top2"></div>
+					<div class="text1" style="margin-top: 20px;">
+						<div class="gongsi">团队介绍</div>
+						<div class="About" style="width: 240px;">Our Team</div>
+						<div class="dian">
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+					<div class="head4-d">
+						<div class="head4d">
+							<div class="h4d-1">
+								<img src="img/team_amore.png" width="100%"height="100%">
+							</div>
+							<div class="h4d-2">
+								<p>翼神</p>
+								<p>高级Java工程师</p>
+							</div>
+							<div class="h4d-3">十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</div>
+							<div class="h4d-4">
+								<div class="h4d-4l">
+									<p></p>
+								</div>
+								<div class="h4d-4r">
+									发送邮件
+								</div>
+							</div>
+							<div class="h4d-5">
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+							</div>
+						</div>
+						<div class="head4d">
+							<div class="h4d-1 h4d-11"></div>
+							<div class="h4d-2">
+								<p>天天</p>
+								<p>前端工程师/设计</p>
+							</div>
+							<div class="h4d-3">十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</div>
+							<div class="h4d-4">
+								<div class="h4d-4l">
+									<p></p>
+								</div>
+								<div class="h4d-4r" style="color: #168BCB;">
+									发送邮件
+								</div>
+							</div>
+							<div class="h4d-5">
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+								<p>
+									<span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="jiantou1">
+						<div class="ren-1"></div>
+						<div class="xian"></div>
+						<div class="dian2">
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+						<div class="xian"></div>
+						<div class="ren-3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head5">
+			<div class="head5-c">
+				<div class="foot1"></div>
+				<div class="text1" style="margin-top: 84px;">
+					<div class="gongsi">合作机构</div>
+					<div class="About">Our Partners</div>
+					<div class="dian">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="head5-d">
+					<div class="hd5-d">
+						<div class="hd5-dt">
+							<div class="gongsi" style="text-align: start;font-size: 24px;line-height: 33px;margin-top: 10px;">合作机构</div>
+							<div class="About" style="text-align: start;font-size: 13px;line-height: 0.889px;letter-spacing: 4px;">Our Partners</div>
+						</div>
+						<div class="hd5-dd">
+							<p>
+								<img src="img/pLogo01.png" >
+							</p>
+							<p>
+								<img src="img/pLogo02.png" >
+							</p>
+							<p>
+								<img src="img/pLogo03.png" >
+							</p>
+							<p>
+								<img src="img/pLogo04.png" >
+							</p>
+							<p>
+								<img src="img/pLogo05.png" >
+							</p>
+							<p>
+								<img src="img/pLogo06.png" >
+							</p>
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+					<div class="hd5-d">
+						<div class="hd5-dt">
+							<div class="gongsi" style="text-align: start;font-size: 24px;line-height: 33px;margin-top: 10px;">用户</div>
+							<div class="About" style="text-align: start;font-size: 13px;line-height: 0.889px;letter-spacing: 4px;">3000+</div>
+							<div class="biao2">更多<i class="icon-chevron-right"></i></div>
+						</div>
+						<div class="hd5-dd">
+							<p>
+								<img src="img/uLogo01.png" >
+							</p>
+							<p>
+								<img src="img/uLogo02.png" >
+							</p>
+							<p>
+								<img src="img/uLogo03.png" >
+							</p>
+							<p>
+								<img src="img/uLogo04.png" >
+							</p>
+							<p>
+								<img src="img/uLogo05.png" >
+							</p>
+							<p>
+								<img src="img/uLogo06.png" >
+							</p>
+							<p>
+								<img src="img/uLogo07.png" >
+							</p>
+							<p>
+								<img src="img/uLogo08.png" >
+							</p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="head6">
+			<div class="head6-c">
+				<div class="text1" style="margin-top: 84px;">
+					<div class="gongsi">联系我们</div>
+					<div class="About">Contact Us</div>
+					<div class="dian">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="hd6-c1">
+					<div class="h4d-41">
+						<div class="h4d-4l2">
+							<p></p>
+						</div>
+						<div class="h4d-4r2">
+							名字*
+						</div>
+					</div>
+					<div class="h4d-41">
+						<div class="h4d-4l2">
+							<p id="h4-1"></p>
+						</div>
+						<div class="h4d-4r2">
+							邮件*
+						</div>
+					</div>
+					<div class="h4d-41">
+						<div class="h4d-4l2">
+							<p id="h4-2"></p>
+						</div>
+						<div class="h4d-4r2">
+							联系电话
+						</div>
+					</div>
+				</div>
+				<div class="hd6-c2">
+					<div class="hd6c2">
+						<div class="hd6c">
+							<div class="h4d-4l2"style="float: none;">
+								<p></p>
+							</div>
+						</div>
+						<div class="hd6c1">说点儿什么吧*</div>
+					</div>
+					<div class="hd6c21">
+						<div class="liuyan">
+							<p>*亲，留言的时候，要请留下你的姓名和联系方式哦~ </p>
+							<p>谢谢你的留言，我们将及时回复！</p>
+						</div>
+						<div class="liuyan1">
+							<div class="liuyan-l">
+								<p></p>
+							</div>
+							<div class="liuyan-r">发送留言</div>
+						</div>
+					</div>
+				</div>
+				<div class="hd6-c3">
+					<div class="dizhi">
+						<p class="dizhi-t"></p>
+						<div class="dizhi-r">
+							<p>地址</p>
+							<p></p>
+							<p style="margin-top: 22px;">北京市昌平区站前东街2号</p>
+							<p>回龙观田园风光综合商业楼3层</p>
+							<p>邮编：100081</p>
+						</div>
+					</div>
+					<div class="dizhi">
+						<p class="dizhi-t dizhi-t1"></p>
+						<div class="dizhi-r">
+							<p>电话</p>
+							<p></p>
+							<p style="margin-top: 43px;">总机：010-8888888</p>
+						</div>
+					</div>
+					<div class="dizhi">
+						<p class="dizhi-t dizhi-t2"></p>
+						<div class="dizhi-r">
+							<p>网络途径</p>
+							<p></p>
+							<p style="margin-top: 22px;">邮箱：cp@feicuiedu.com</p>
+							<p>微博：aaaaaaa_sina</p>
+							<p>微信：ccccccc_weixin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head7">
+			<p></p>
+			<p></p>
+		</div>
+		<div class="head8">
+			<div class="head8-c">
+				<div class="hd8-cc">
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+				<div class="hd8-c1"></div>
+				<p class="bei">备案声明</p>
+				<div class="ding-1"></div>
+				<div class="ding-2"></div>
+			</div>
+		</div>
+	</body>
+</html>
